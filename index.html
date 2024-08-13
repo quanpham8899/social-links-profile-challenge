@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <img class="avatar" src="assets/images/avatar-jessica.jpeg" width="32" height="32">
+      <h2 class="name">Jessica Randall</h2>
+      <b style="color: #c5f82a;" class="location">London, United Kingdom</b>
+      <p class="about_me">"Front-end developer and avid reader."</p>
+      <button class="myButton">GitHub</button>
+      <button class="myButton">Frontend Mentor</button>  
+      <button class="myButton">LinkedIn</button>
+      <button class="myButton">Twitter</button>
+      <button class="myButton">Instagram</button>
+    </div>
+  </body>
+  <footer>
+  <div class="attribution" style="font-size: 15px;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">The Handsome Duke</a>.
+  </div>
+</footer>
+</html>
+
+<script>
+  const buttons = document.querySelectorAll('.myButton');
+
+  buttons.forEach(button => {
+      button.addEventListener('mouseover', function() {
+        button.style.backgroundColor = '#c5f82a'; 
+        button.style.color = '#000000';
+      });
+
+      button.addEventListener('mouseout', function() {
+        button.style.backgroundColor = '#545454'; 
+        button.style.color = "#FFFFFF";
+      });
+
+      button.addEventListener('mousedown', function(){
+        button.style.backgroundColor = '#82DA00';
+        button.style.color = '#000000';
+      });
+
+      button.addEventListener('mouseup', function(){
+      button.style.backgroundColor = '#c5f82a'; 
+      button.style.color = "#000000";
+      });
+  });
+</script>

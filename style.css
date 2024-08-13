@@ -1,0 +1,98 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+head, body, footer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+head {
+    height: 15%;
+    min-height: 100px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 75;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+footer {
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    font-family: 'Inter-Regular';
+}
+
+#box {
+    background-color: rgb(42, 42, 42);
+    width: 370px;
+    height: 540px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.name {
+    font-family: 'Inter-Bold';
+}
+
+.location {
+    font-family: 'Inter-SemiBold';
+    font-size: 14px;
+}
+
+.about_me {
+    font-family: 'Inter-Regular';
+    font-size: 13px;
+}
+
+.myButton {
+    width: 85%;
+    height: 45px;
+    border-radius: 6px;
+    border: 0;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: white;
+    /* background-color: rgb(53, 53, 53); */
+    background-color: #545454;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('assets/fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
